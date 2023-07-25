@@ -1,13 +1,27 @@
 <template>
-  <div>
+	<div>
+		<h2 class="text-white text-2xl text-center my-8">Products</h2>
 
-  </div>
+		<div class="grid grid-cols-2 gap-7">
+			<div v-for="product in products">
+				<ProductCard :product="product" />
+			</div>
+		</div>
+	</div>
 </template>
 
 <script setup lang="ts">
+	interface ProductType {
+		title: string;
+		price: number;
+		description: string;
+		img: string;
+		id: number;
+	}
 
+	const { data: products } = useFetch<ProductType[]>(
+		"http://localhost:4000/products"
+	);
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

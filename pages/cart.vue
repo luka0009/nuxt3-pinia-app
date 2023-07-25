@@ -1,13 +1,9 @@
 <template>
-  <div>
-
-  </div>
+	<div>
+		<h2 class="text-white text-2xl text-center my-8">Your Basket</h2>
+	</div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

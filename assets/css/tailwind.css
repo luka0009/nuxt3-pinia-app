@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark;
+	@apply bg-dark text-white;
 }
 
+.wrapper {
+	@apply my-8 max-w-5xl mx-auto;
+  }
+  .card {
+	@apply bg-primary shadow-xl rounded-md p-4;
+  }
+  .btn {
+	@apply bg-secondary py-1 px-2 rounded-sm text-lg;
+  }
