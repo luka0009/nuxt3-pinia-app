@@ -8,6 +8,9 @@
 				<span class="material-icons-outlined text-secondary text-5xl">
 					shopping_bag
 				</span>
+				<span class="text-white bg-black p-2 rounded-2xl font-bold badge">
+					{{ cartStore.numberOfProducts }}
+				</span>
 			</NuxtLink>
 		</header>
 
@@ -23,6 +26,8 @@
 	const cartStore = useCartStore();
 
 	cartStore.getCart();
+	console.log(cartStore.numberOfProducts);
+	
 </script>
 
 <style scoped>

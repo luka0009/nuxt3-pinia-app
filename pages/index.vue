@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-	interface ProductType {
+	export interface ProductType {
 		title: string;
 		price: number;
 		description: string;
