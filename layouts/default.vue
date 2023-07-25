@@ -17,6 +17,17 @@
 	</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+	import { useCartStore } from "~~/stores/cartStore";
 
-<style scoped></style>
+	const cartStore = useCartStore();
+
+	cartStore.getCart();
+</script>
+
+<style scoped>
+	.badge {
+		position: relative;
+		left: -15px;
+	}
+</style>
