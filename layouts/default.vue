@@ -1,24 +1,18 @@
 <template>
-  <div>
-    
-    <header>
-      <NuxtLink to="/">
-        <h1>Adventure Store</h1>
-      </NuxtLink>
-      <NuxtLink to="/cart">Cart</NuxtLink>
-    </header>
+	<div>
+		<header>
+			<NuxtLink to="/">
+				<h1>Adventure Store</h1>
+			</NuxtLink>
+			<NuxtLink to="/cart">Cart</NuxtLink>
+		</header>
 
-    <div>
-      <slot />
-    </div>
-
-  </div>
+		<div>
+			<slot />
+		</div>
+	</div>
 </template>
 
-<script setup>
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
